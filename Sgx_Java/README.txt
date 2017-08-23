@@ -26,5 +26,5 @@ How to Build/Execute the Sample Code
     f. Simulation Mode, Release build:
         $ make SGX_MODE=SIM SGX_DEBUG=0
 - Execute example Java app:
-    $ java AppJava [size of byte array]
+    $ java JavaApp [size of byte array]
 - Remember to "make clean" before switching build mode
