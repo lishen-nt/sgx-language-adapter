@@ -1,16 +1,13 @@
 # sgx-language-adapter
 
--------------------
-Sgx_Java
--------------------
-The project demonstrates several fundamental example APIs created with Java Native Interface (JNI).
-These example APIs enavle JAVA to perform enclave operations in Intel(R) Software Guard Extensions (SGX):
-    - Initialize and destroy an enclave.
-    - Generate a random byte array using SGX trusted library function (sgx_read_rand).
+## Sgx_Java
 
-------------------------------------
-How to Build/Execute the Sample Code
-------------------------------------
+The project demonstrates several fundamental example APIs created with Java Native Interface (JNI). These example APIs enavle JAVA to perform enclave operations in Intel(R) Software Guard Extensions (SGX).
+- Initialize and destroy an enclave.
+- Generate a random byte array using SGX trusted library function (sgx_read_rand).
+
+### How to Build/Execute the Sample Code
+
 - Install Intel(R) SGX SDK for Linux* OS
 - Install OpenJDK (sudo apt-get install openjdk-8-jdk)
 - export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`pwd`
@@ -31,7 +28,7 @@ How to Build/Execute the Sample Code
     $ java AppJava [size of byte array]
 - Remember to "make clean" before switching build mode
 
--------------------
-Sgx_Python
--------------------
+
+## Sgx_Python
+
 coming...
