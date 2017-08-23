@@ -100,18 +100,11 @@ JNIEXPORT void JNICALL Java_LibSgxJava_SgxFunction_jni_1sgx_1destroy_1enclave
 JNIEXPORT jbyteArray JNICALL Java_LibSgxJava_SgxFunction_jni_1ecall_1sgx_1read_1rand
    (JNIEnv * env, jobject obj, jbyteArray testJavaArray)
 {
-
-    /* Initialize the enclave 
-    if(initialize_enclave() < 0){
-        printf("Enter a character before exit ...\n");
-        getchar();
-        return env->NewByteArray (0); 
-    }*/
  
     /*pass through jbytearray to native C code */
     printf("\nTest: Generate sgx random number ... ...\n");
     
-    // convert jbytearray to C char[]
+    /* convert jbytearray to C char[] */
     int len = env->GetArrayLength (testJavaArray);
     unsigned char* byteArrayBuf = new unsigned char[len];
     env->GetByteArrayRegion (testJavaArray, 0, len, reinterpret_cast<jbyte*>(byteArrayBuf));
@@ -128,7 +121,7 @@ JNIEXPORT jbyteArray JNICALL Java_LibSgxJava_SgxFunction_jni_1ecall_1sgx_1read_1
     }
     printf("\n");
 
-    // convert C char[] to jbytearray for return
+    /* convert C char[] to jbytearray for return */
     jbyteArray testJavaReturnArray = env->NewByteArray (len);
     env->SetByteArrayRegion (testJavaReturnArray, 0, len, reinterpret_cast<jbyte*>(byteArrayBuf));
 
