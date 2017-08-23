@@ -2,9 +2,7 @@
 
 ## Sgx_Java
 
-The project demonstrates several fundamental example APIs created with Java Native Interface (JNI). These example APIs enavle JAVA to perform enclave operations in Intel(R) Software Guard Extensions (SGX).
-- Initialize and destroy an enclave.
-- Generate a random byte array using SGX trusted library function (sgx_read_rand).
+The project demonstrates several fundamental example APIs created with Java Native Interface (JNI). These example APIs enable JAVA to perform enclave operations in Intel(R) Software Guard Extensions (SGX).
 
 ### How to Build/Execute the Sample Code
 
