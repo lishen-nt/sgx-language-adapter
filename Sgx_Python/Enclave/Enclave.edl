@@ -1,0 +1,11 @@
+enclave {
+
+    trusted {
+
+        /*
+         * Utilize random number generator in enclave.
+         */
+	public void ecall_sgx_read_rand([out, size = len] unsigned char *ptr, int len);
+
+    };
+};
