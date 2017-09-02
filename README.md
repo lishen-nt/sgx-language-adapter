@@ -40,17 +40,17 @@ These example APIs enables Python to perform enclave operations in Intel(R) Soft
 - Install Ctypes
 - export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`pwd`
 - Build the project with the prepared Makefile:
-    a. Hardware Mode, Debug build:
+    1. Hardware Mode, Debug build:
         $ make
-    b. Hardware Mode, Pre-release build:
+    2. Hardware Mode, Pre-release build:
         $ make SGX_PRERELEASE=1 SGX_DEBUG=0
-    c. Hardware Mode, Release build:
+    3. Hardware Mode, Release build:
         $ make SGX_DEBUG=0
-    d. Simulation Mode, Debug build:
+    4. Simulation Mode, Debug build:
         $ make SGX_MODE=SIM
-    e. Simulation Mode, Pre-release build:
+    5. Simulation Mode, Pre-release build:
         $ make SGX_MODE=SIM SGX_PRERELEASE=1 SGX_DEBUG=0
-    f. Simulation Mode, Release build:
+    6. Simulation Mode, Release build:
         $ make SGX_MODE=SIM SGX_DEBUG=0
 - Execute example Python app:
     $ python PythonApp.py [optional: size of byte array]
