@@ -8,7 +8,7 @@ The project demonstrates several fundamental example APIs created with Java Nati
 
 - Install Intel(R) SGX SDK for Linux* OS
 - Install OpenJDK (sudo apt-get install openjdk-8-jdk)
-- export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`pwd`
+- export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:\`pwd\`
 - Build the project with the prepared Makefile:
     1. Hardware Mode, Debug build:
         $ make
@@ -38,7 +38,7 @@ These example APIs enables Python to perform enclave operations in Intel(R) Soft
 
 - Install Intel(R) SGX SDK for Linux* OS
 - Install Ctypes
-- export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`pwd`
+- export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:\`pwd\`
 - Build the project with the prepared Makefile:
     1. Hardware Mode, Debug build:
         $ make
