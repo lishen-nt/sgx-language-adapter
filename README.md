@@ -73,7 +73,6 @@ These example APIs enables Python to perform enclave operations in Intel(R) Soft
 ### How to Build/Execute the Sample Code
 
 - Install Intel(R) SGX SDK for Linux* OS
-- Install Ctypes
 - export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:\`pwd\`
 - Build the project with the prepared Makefile:
     1. Hardware Mode, Debug build:
